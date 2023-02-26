@@ -1,14 +1,13 @@
 <template>
     <div id="containerMenu">
-            <img src="../../assets/logo_temp.jpg" />
-            <SideBarItem v-for="option in options" :key="option.id" :title="option.title" :path="option.icon" :clickHandler="aumentar" />
+            <img src="@/assets/logo_temp.jpg" />
+            <SideBarItem v-for="option in options" :key="option.id" :title="option.title" :clickHandler="aumentar" />
             <h3>{{ count }}</h3>
     </div>
 </template>
 
 <script>
 import SideBarItem from './SideBarItem.vue';
-import { mdiAccountCircle, mdiShoppingOutline, mdiAccountCashOutline } from '@mdi/js';
 
     export default{
     data(){
@@ -16,15 +15,12 @@ import { mdiAccountCircle, mdiShoppingOutline, mdiAccountCashOutline } from '@md
         options: [{
             id: 0,
             title: "Usuários",
-            icon: mdiAccountCircle,
         },{
             id: 1,
             title: "Consultoras",
-            icon: mdiShoppingOutline,
         },{
             id: 2,
             title:"Clientes",
-            icon: mdiAccountCashOutline,
         }],
         count: 0,
         }

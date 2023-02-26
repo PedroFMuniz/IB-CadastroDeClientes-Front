@@ -21,7 +21,6 @@
         width: 100%;
         display: flex;
         align-items: flex-end;
-        border-bottom: 2px solid black;
     }
 
     h1{
